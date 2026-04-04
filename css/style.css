@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    /* SAME BACKGROUND FOR ENTIRE APP */
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("../images/retina.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ---------- Center Layout ---------- */
+
+.login-container{
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+
+/* ---------- Title ---------- */
+
+.main-title{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+
+    background: rgba(0,0,0,0.6);
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+
+/* ---------- Login & Upload Box ---------- */
+
+.login-box,
+.upload-box{
+    width: 350px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ---------- Headings ---------- */
+
+.login-box h2,
+.upload-box h2{
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+
+/* ---------- Inputs ---------- */
+
+.login-box input,
+.upload-box input{
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* ---------- Buttons ---------- */
+
+.login-box button,
+.upload-box button{
+    padding: 10px;
+    margin-top: 12px;
+
+    background: #2b6cff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.login-box button:hover,
+.upload-box button:hover{
+    background: #1f55d8;
+}
+
+
+/* ---------- Register link ---------- */
+
+.link{
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+
+/* ---------- Uploaded Image Preview ---------- */
+
+.upload-box img{
+    display: block;
+    margin: 15px auto;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    max-width: 100%;
+}
+
+
+/* ---------- Prediction Text ---------- */
+
+.prediction-result{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #2b6cff;
+}
+
+
+/* ---------- Loading ---------- */
+
+#loading{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #444;
+}
+
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 400px){
+
+    .login-box,
+    .upload-box{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .main-title{
+        font-size: 18px;
+    }
+
+}
